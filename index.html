@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">       
+    <title>Indian Cuisines</title>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h1 { 
+            text-align: center; 
+            color: #6E7497;
+        }
+
+        header img {
+            display: block;
+            margin: 0 auto;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .description-box {
+            background-color: #5d9899;
+            color: white;
+            padding: 25px 40px;
+            text-align: center;
+            line-height: 1.6;
+            font-size: 15px;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #fbeed5;
+            padding: 12px;
+            max-width: 1100px;
+            margin: 20px auto;
+            font-weight: bold;
+            color: #795548;
+        }
+
+        .main-layout-wrapper {
+            display: grid;
+            grid-template-columns: 75% 25%;
+            column-gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .left-food-content {
+            grid-column: 1;
+        }
+
+        .food-section-block {
+            margin-bottom: 35px;
+        }
+
+        .food-section-block h2 {
+            text-align: center ;
+            background-color: #FCF49A;
+            margin: 0 0 15px 0;
+            padding: 8px 0;
+        }
+
+        .food-row-layout {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .food-row-layout img {
+            border: 8px solid #f3e8f4;
+            padding: 2px;
+            background-color: #ffffff;
+            flex-shrink: 0;
+        }
+
+        .food-row-layout p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .right-sidebar-panel {
+            grid-column: 2;
+            align-self: start;
+        }
+
+        .sidebar-main-title {
+            background-color: #5d9899;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin: 0 0 15px 0;
+            font-size: 18px;
+        }
+
+        .sidebar-category {
+            margin-bottom: 20px;
+        }
+
+        .sidebar-category h3 {
+            background-color: #7cb5be;
+            color: white;
+            padding: 5px 10px;
+            margin: 0 0 8px 0;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        .sidebar-list {
+            list-style-type: square;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .sidebar-list li {
+            font-size: 13px;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        .footer-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e2229;
+            padding: 20px;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <header>
+        <h1>Indian Cuisines</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDEUnG19b5zDtmWJYEbhid_Zh9kfTPj72knBsbF0uVTA&s=10" alt="Indian Cuisines Banner">
+        <div class="description-box">
+            The traditional food of India has been widely appreciated for its fabulous use of herbs and
+            spices. Indian cuisine is known for its large assortment of dishes. The cooking style varies from region to
+            region and is largely divided into South Indian & North Indian cuisine. India is quite famous for its
+            diverse multi cuisine available in a large number of restaurants and hotel resorts, which is reminiscent of
+            unity in diversity
+        </div>
+    </header>
+
+    <nav class="flex-container">
+        <div>BENGALI</div>
+        <div>GUJRATI</div>
+        <div>MUGHLAI</div>
+        <div>PUNJABI</div>
+        <div>SOUTH INDIAN</div>
+    </nav>
+   
+    <div class="main-layout-wrapper">
+
+        <main class="left-food-content">
+            
+            <div id="bengali-food" class="food-section-block">
+                <h2>Bengali Food</h2>
+                <div class="food-row-layout">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCI1u41nmfgoGvGfn1aLtqZ7zW7x97BbP_hg6WNee5Dg&s=10" width="300px" alt="bengali food">
+                    <p>Bengali cuisine is appreciated for its fabulous use of panchphoron, a term used to refer to the five
+                        essential spices, namely mustard, fenugreek seed, cumin seed, aniseed, and black cumin seed. The
+                        specialty of Bengali food lies in the perfect blend of sweet and spicy flavors.</p>
+                </div>
+            </div>
+
+            <div id="gujarati-food" class="food-section-block">
+                <h2>Gujarati Food</h2>
+                <div class="food-row-layout">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTdQrcQf2hJIccTc0vRjrWJMdW7mR_bGf0Lqkjn06p0Q&s=10" width="300px" alt="gujarati food">
+                    <p>The traditional Gujarati food is primarily vegetarian and has a high nutritional value. The typical
+                        Gujarati thali consists of varied kinds of lip smacking dishes. Gujarati cuisine has so much to
+                        offer and each dish has an absolutely different cooking style.</p>
+                </div>
+            </div>
+
+            <div id="mughalai-food" class="food-section-block">
+                <h2>Mughlai Food</h2>
+                <div class="food-row-layout">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHQ50p5SB8kwlNtqAUzaciQgUc08OWeW_utOKnHg479A&s=10" width="300px" alt="mughali food">
+                    <p>Mughlai cuisine is one of the most popular cuisines, whose origin can be traced back to the times of
+                        Mughal Empire. Mughlai cuisine consists of the dishes that were prepared in the kitchens of the royal
+                        Mughal Emperors. Indian cuisine is predominantly influenced by the cooking style practiced during the
+                        Mughal era.</p>
+                </div>
+            </div>
+
+            <div id="punjabi-food" class="food-section-block">
+                <h2>Punjabi Food</h2>
+                <div class="food-row-layout">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuxgoSwESBIzc7ma_3vH61xhR5plw-D7uJTHHmsDKUdA&s=10" width="300px" alt="punjabi food">
+                    <p>The cuisine of Punjab has an enormous variety of mouth-watering vegetarian as well as non vegetarian
+                        dishes. The spice content ranges from minimal to pleasant to high. Punjabi food is usually relished
+                        by people of all communities. In Punjab, home cooking differs from the restaurant cooking style.</p>
+                </div>
+            </div>
+
+            <div id="south-indian-cuisine" class="food-section-block">
+                <h2>South Indian Cuisine</h2>
+                <div class="food-row-layout">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALMAtAMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAFBgMEBwACAQj/xABIEAACAQMCAwUEBwQHBgYDAAABAgMABBEFIQYSMRMiQVFhFHGBkQcjMqGxwdFCUuHwFTNicoKS8RZDc4OT4iREU7LC0iUmNP/EABoBAAMBAQEBAAAAAAAAAAAAAAMEBQIBAAb/xAAsEQACAgEEAQMDAwUBAAAAAAABAgADEQQSITFBEyJRYYGRFDJxBSMzQrEV/9oADAMBAAIRAxEAPwA09scf1I+Zrw0Lhdox99FGeIdcj4rXhpIMf9yVFIlXJg9EYKAwC5z4+n8agmMcSlpeTCjJNFJTFkHbGDtzLnwpX4kuUfuRhggzlgQ2fTYV08TDvtXJirrGpi9vGkVAsa7IuPDzqvbiOWRg7lFxvgZNer6BJYhIo+sU7lehqLTcdlKGOZA4PwxRcDbE6B6lwLT3IIshYE5R5k7mpLa27QMk0R/ssD0q5BaGKIzsMnHdB8a+/wDi3XtOmPALSrvjgS4K/Jk2hW6Wms21zNyqyEJzeYz/AK/dWs6vw/b64tpPzhWgBKkjIbpsfTasj7Vp1MEygFh3ZFGOU+GR76J8NfSfNp6my1S3OYyVY4ORimqCLUKvELwanDLxNJsNEitb1IQxMAHP2RHQ+npRbVpZrazla0i5nVSQOgzWVt9LMJ1+1dY2Flz8s5VNwvTPwODWr295b31us1vIkkTrlWU8wYHxplawEKrxFDZl9zcxU0HiJ729S2mkjcSwq8RCEZJ3IPwrNPpUsxY8WytEqqtzEkxwP2jkH71zWxJpOmaaWuUjjhSNPtscKijJ8dh1rFOO9WXiLiKS6tMtaoghhc9GVckt8ST8MUJFdVw5zO6lq2OUGIBswS2fGjFqjE53PlVewthnl646mibSJbpyr18/KskgxMZzkQppQJYxN0XB6ZwT/pRMxxj3j+yBS9pWotbT5dQyN4bfp76aIrhJ1+rZAfEFunyWhN3KdNgdZH9XthWPyqTIEZAVhuD1HrUwL9OYf4ec1zc2CW5idsd1/P31mFMr8rMcCJz8f4V9WGUjIt2Ppv8ApUhDY/aH/L/U14UuftY+Sj8TXp6TLC3KM2+PeDXyvmQegOPUpXV3M5iF2kjxjtGB9EUV47WIf718/wCEVbeN1yTEB/gFUpnmxhUbPmOQbViani/u7eGMStLLhQxPIQSenlSwZJL8yQ9nIzlmYnrtR241DTrdktNVRlSVSwk2bByRvj3VHJFp78nsN7C4H2RJ0Hu9KG7kHqaFVdowfEWpuGbpY+0gmVlPVGQ/lmgTRS6dfhp42VOblcg8y49/61ojOVbmFxbocYJWXb+FDdY1LRrZWa8v4dxh1XLFtq7Xc/WMzh0tancOMSBbftY4okw2WJxn+fWvcsi2ReBYy8pG58KrcGajHqdvNKoP1B7NAep8j8qN3llKqF4kBk5ep/ZP50lcCG2t4lJHDDcPMHQwLeRK8kCIc7FSQwpZ17SvZdX7ZRmK4ic5I6MF3/Wm2H22CMl2zj9nkGKr6kPbLR0lj5JkBaPbrsRj5E0TT3bGiurq9SszPrmzh7Zn+yOprTvo74U1eC3W8n1O70+yOGW3UjMi+ZznlB92fdSNoVrHqfFGm2cyhoCyvMp6EAZx863zULhIEjjkRjCdiyg7fIVZZwibjItVZZpBcarpkeIXCzt0ww58n1JqvLrNrKVEcEckZPIV2O/kMfhStrH/AIaZoLFTIjEksq/ZB94qG3FvpD2srSDsxOp5SPs5O5I91Sl1tztg8SudJUq5EaP6E06C77eLT4I5JCd0jGB8PP1qeC3BjdHjBCsQpcA5Hy/nFToLv6k3JjQlSXQb7+h9Kkfn2AIC+Jps5zzJuAItaxwrYXSF47aOG5xkNEeQE+RGMUAks7zSXENyMBvsyK7EN8ulaDGh+y7F2G5Y7UO1fTludOljnIaYgsrhcYI3H6V7M0uFMWEVnXZsg+PI5/OvRtyAck9MfYA/E0P0q5tZ4ubkXlP77gEfM0V7S06Rpb82DtzA7YPpXjGAcyBraJQO+B/kFfVhgVd3HvDjf5CpfbLPGR2Z/ug/kBXr26PGIw3+Rv1rk7IgVAxzv/1D+ldUvtp/9Nz/AIf+6ur05CEyqwwCT/ylqkVCvvsP+Gg/Kr7zqvQqf7sRoTql97NbSy9CBgZQDeuAzp4GYKvbQ3upG4my0cY5YlAGNvE4HnVhLaOSErKi93rlfXercaRrHGcgKwABJ61JfICoKY8NqXawkyhXUqLgRYudNswWVraADOeYgb+VBL7QbOaSRMBD1WRAB86a7m2BAJweU5G9UTEM84znJNGS5hzmcepWGCIC4RMnD+uez3PetbrC8/gGB2z5ZrS7tvqizheQgnlP7RpG1hQ2lXBIHMq7HyNHNLvzq+k2dwSC5QLJ7x1oGqHqD1PsZylQh2CWFnSWEo8pOd23+415kkt1UBMPy7Fg2cUJupC9z2EY5Ik2yTj+etFbbTjFGzHPMBuRjektuMGMHETBKNB4wSckJGF5o2Ow8wPyrfbWWLU9LinjAdJEDrg/GsP4ysGudOWXlxLC2D7j/P30w/Rpx5Z2drDpWrzeyiBCA0uykDpv4bedfQadhZUM/wASBevp2ERzu7a/lvp09mRrflI5+pzgetLUumXN1L7PJGntMMgKsBud9vyrS7W7t7u2SeCRXiccysrAgjzrxNDYxkXk4jjIO0pwCfjSln9NOdyNGa9fgYZYOtLu7WA/0nCFfIGV6eGetXFMcqc8UismOoIwapT8S6MkfKZUlUbYALZqHT7jh+6aX2Ls7aeYYJQchJ9x2J3poIg9u8ExdksPu2kCWnliYKdmViCMbg+tBuK9TttM0ieWefvsGWEDqXI2AFBeK9Q13hWQJOkVzazH6i6Hd/wsANj93lWdXV3cXsry3U7yM8hkILHAY+Q8KwUK8GAawDqENBuTbyZKLykYCk/fmnCGaOdQV7I823dkY+lI1q3Jg4BPhnpTFpd3HCoWZgpOG7qE58jQ+zN6ezPtML9tGACXhHvVvzNehNzbBwcfuxV8VoRnAuGwcd2HapAU2xbzn1OBXsRvM5W2+1J/01rqlHT/APmf/OK6tYE9mXJ44+U7uT/wv40m8WXChkgQHYZbIwc/OnWZnVWYWuwGTmHP51nGtsbm9eQKxaR+6FX5ACsoBmB1LYXHzDOh6ilzAIywWSMBceNFZ5A4CnGeoOfGhug8EahI0VzqEpsVY5CBeZyvh6DPrVvVtDurGbtLC7FyhBBDA5BPhkfwoVtPOQY/pdTuQBxzPEqkSDu58TnoKqahyrC0q90Y3HnURtNfdQTaDvDqsg6UO1TSeJVtYwLCSUyg8oRgT8uprNdJY8GGs1CKOYI4i1dPYzBESskjYAHiKJcB3LQ3Nxp8uQhDOp8sDcUjz2d1HeGK4R45Y25XWUEFD6jwrR9Kt+x1KdpECkHKSjIyrf601qK1SnbEqLzZbuny7jcXRWMZRDt6+NMK3/YW8UcgUSNGGIJoalq1xdbL9tsZPpV67sopbsBi/wBWAvKDtkeNSW5IEqnBni/tFvbZ0OR2iY3rML/liZo5FHMpIPoRWtExbw8/1idQRWcceWRtdQEyjEc4znzYdfyp3Qv7tkla+rIDjxKvDmo30N7bW1lf3Fukk6LhHPKCTjOOnjWzfSJdr7Vaafy5ggXtnHrnlX5AN8xWBWjMkgKsVYbgjqK22a6/2u0e31mwXnvbeIRahaL9oeTqPEZyR6HHUVQ1AY1MFimjZBcN8XMRwROSeWLqSdvwrreVpH5o3Djr3TvXq4gguImjx3WOSoOCpz0x6V8tLDsbgdkCWkARR0zv99RBg9nmfQkuGGB7Yz27nWuCNbsb5zI1rCZ4mfquASN/ep+eKWeG/o81LVYI7u9m/o+1fDJzpzSOPMLtge/5VoXClnb2b3NnechvrlO3ltuvZRdFDe8k7e/ypiinjuDzq4YdRV2mv+2u/ufN6oq1zFeokw/RrpKx4a+v2bH2u4B8sVU1Dga+0+3kfTbg3aDcJjlkX4dG+6ni91exsLmK3u7pY5p/6qMgkn7tvjVvthCOc55V3Y46DzrZqqaBXg5EySG5uDLmR2HNvyhgMenSrGedeZ7jr5yHP3CjHH2lRxX8V7AoAugefGftDx6+INKvZ8uzAY8yB+bUq6bWxH0bcMwlywj/AMwp/wATfrXVURbflGZIf8yfpXViahvVLm4hsZneZCuMH6zJonwXw6tlZLql9AGvJhzQqw/ql8D7z/PjQ3iGaQ20MV0sxikmQMhkTvjPTArRJ+URgMOgwV/I1qke0sYC7mwReu1kulJYlic9CAPXaqqxxK2G6kdAds0TQB3J5AoUYwARmqt6iRKXzyjr0G3wqbdx748h/wBZA2pWsNx7OrHtpSORQu+B5E7Vf7ZxGpYKc+ucfOl2+t1MpeeCN8IBncPnONiPxovbMptlJLMvLsetZp1DeOJ2ynHJib9I3DS3iPqtlEVv0UGQdBKvl/e8j49KG6XexXdnayL3jLAjsmOuF5Tj4g1oVyXa1k7XmELYA2J8fLyzWX8N9tFppix37e4likCY7oY5+WQwqkWL15MUQBLMCNGivzABwxdZdlI33H+tWdRx7RLznAx+VDLGUxCK4HLucZz1I9PTp86KamO2muUETNleo8jUy1sEZlZOeYMiIaUsq8zddzmqHF+nHUNJkAXMkI51232q08LIkao3Jluueo8hRGNeeAiTfbGfOho7I4YT1qhlKzFBlG6VsfAnBN5YxQazq97cac2A8dvC3JIV/tk9B/Z+eOlCPo54bgvuOrmaeMPaaaO3RSNmcnCZ9Bhj71FHuN+IJdQ1F7C2b6iE4kwftsPD3Cr9ty11h/J6kKvTl3KnxDmpcRaG0/M9hbXUg27RolY/PFe7DiTRA7AWsNozDBeOMKR8QNqzuSYQpzlSOg2Ga+ifIwcMjDY1L/V3btwx+JR/T1425P5micLcKwaTrF/qum6lNe2upQhZBcPzyKwOQQ/7Q3PXceZ8CcFuuj6dNDZW73k+7CBpQC3hjLdB6/jSJwrrkui3YBZmtJCOdCdl9RTlxPxNp3D89lPqIkS1vQQlzGvMqsMbMBv0OR8aqafULev1EnXUGo89S3c6Ha6pBbyarCHuY1HfViCh67EHzoq0QKEnduXl60vw8a8LOisnEFgAN8dqAT6YO9Cdb+k3S7WNo9IVr64GcNylYl9cnc/D50xhVEDmS/SDdwKbLTQSZIk7RlUZwNgM7+hpJdYxuYT/AIuWh6Xd1qWoS3167SyzEl8HGfd5AVfSNj/V2wx6tn8qTsbc2Y1ScpOR4Qv9Qn+cfpXVZW2uCM9mg/wk/lXVnMLLPF7dnJbojAsuXyi8uD4fhWkaNqMOv6THeQkLKV5ZB4q46j+fCsl4hmD6m6RBSi90Y2o9weg06AX7TdnJdErChfCkDbOOhP8ACsq4QYPUVG6y47Y+vHIULgOCOpwKjEKlG5wWJ/ax0oc3El/FdPBPpvOuDyyIcgj945/DNWrbXRJbtMNPmAGQAGXf371grSTndG9toHU9RWZY8qoN84JOai1y1u0seaybMgIAwoJx6Z2oHPxNxNJeONO0i0e1IwjNMOb3nB8fL76E3uvcQKYo9VjxG4yFhHIB7zuT5dRWlrpVTjkz221zjqeuKuL4bHRDboUa+lhwFU7hiMcxHgPTNKHBM/ZSyWxO0sQPTJypz+Bar3EuhpPYHU7a3EUseeeMMCHA/OlzTLr2S8t7uPGEbOPMHYj5E0UMHTiK2hqrADNFWHnspUUK5Uc5AG4J6fz60dhjSSBZgO68Xez8iKF2BxIXVgY2X7W2423FG7AxQWywRryohwvjsaQtQE8yjW5xgRY1WHsJ7VI1LZzjB6VbRM4U+Gx9a8a24aS3dVkGGZeZfHapLN+a2kTH9WMgdDg1O3DiO87Za+juEWup6vAR9bIin4Kx/wDtSRJbyQ6lddo7dp2rc2ffTBb6nLYahFq0CnA7kiHx/wBRUvEOmLry/wC0XDDC6ikHLdWw+3G465HXPmPiM5qnzfSNv+sRbFVpJHcUNVE3ZjsScZ3UVUNrcTGJY5OzhU8wUjfrn7s1emnZcB8oBs2eo9/lU8eOyQqDg9CwxmhCxkrxicKLZZ3OZmJwOmMkmjH0mKzcBcN287D2gzCTB68ojYH/ANy1NouiNcsLm9+o0+LvSzSd0YFLnG+uPxLrHNZRObK1Ts7dVU55fFiPDJ/AUfQ5BLwOucYCiKMNsE3q7AVDAEVIumX7kctlcnPT6pv0r2dPuIF7S4t50AIGTGQMnfFNsfmTeYStZVUoVJ8tqYoSRGnNMNxneQ/rSel1Eo3A+NGdOvlkjVkQjwwepoWcxjTNgkQwzR53lT/Ma6vKyllB9nc++Nq6uRyAr8tc37iNstJJyLnzJxTTxFG8VzY6dblB7NEixcvUHb+FLForNrVkGUAG6jzv/aFaTeWkKahNMkaNIeUMxG6LjrmsE4EDoMDc0qLczexm3UxG4JwMnw8Wx5VKtxawdnaLf8j9SE35hUdrb2dzqMl7azLKrrusYyQcb1YWxSxtZLe1Cdvy7SSJnmPqRQiuTHyQBiUdS1oQzJBpqLNOshVgwwNh0HrU2oSwezxe3IUilJLMTnkPXfyrzClwFe51a1ixCmVlQDJ2Od/GvpntLywjjlOYphzEuPsDzrnE7wCILaJ7e69mixNbzQ9rzhcZycfhWbdh7PLPDt9VKyY8sGtRhRWuY4Ys9jB3YmznI6n8qzS6lE+q38kZyjXMhB+NM0ngxDX9Ax04Q1X2nTmtX3uLZQMDqY+mR7unypkspvaisoHIAw6nc4NZdp97Jpt6lzCASuzIejqeoP8APlT5aaiEkSSJg8Mg5lZttuvX+fGsXV5E7pbcjHkQ5rVvHHGmCQe1yMfhQOblScyo7KvN0CnFMd9m50vtoepXI38QaoSvHNAnaKdxg5361KsABMqVMdsGRxpHLcx8nMpIbBPh0pB1eXVuEOIXvNHupLXtgCChBVx5MDsfjWlTwOLskMCTFynPjQXjPS/b9P7MRjtAp5CPBhuB+XxpjRag1P8AQwWqrFlePMCw/SbJfqE17hrTNQfoZBmMn5g0Qi43iUqNM4Rso5WwFaSUyYPouKQNPRUlwwBNaTwTpHZSrrN2o9nhQtCF3LOcqNgD039c4qvYy56EiKXLbRIb214p4liaXV5Oyt0PdtY8RgEEZPL44Bzk5qmdSbTX7LTrYJGkShwu5J8Saa9Tl9nCxw3C8wDRqeTlHTwPTIA6bdBtQPVdKimPtyK6FoVMjxOeXtD1Udcgg/DPwpcajJ+ke/S4GYEseIL2Cc8s7RIGHMeXmLnqTk+Zz9/nRey4wYRtJPDHJI7nGB0QdCfj6UFu9Jnt7W7l5AIo0Lu5wOboBj12zUWl6VcXGjvdiEtAjESSN9jr54670QsrDIMGFZV57jNfvo3EyDsEEV0CX7VAo8Nwd9692GjNEsZgKXSLzDujfO2+PgRj0pXs5ksFuEhCmYMwEi7qenh023qeLVLiO87WaSaNQxZJE6BvyNDwd2fE4uzA45jOJI2GVtoiPPlx+VdVyzl0m8WSWRIZDzkAsuTjw+ycfnXVvA+YTd9IrWWkXmr6lFa6fgTu3MGOcIBvzE+AFbMNItmjAuSZJSiiQoSoY/pQzhDTLfSNDF6yN7RMvPKxHeA8FHp+PWpdNm7SWYwIe2cktKx+7A6VhrK6yqtyTF6a3CkiebzhrTjBIlkktpKwP1kMzA+85yKAX0up6SIo9Sh9stn7qXUJ5TkD9pemfUH9KZbaO5a7MxncQnJ5GGx2qDVojf2M9nsVlVgNvskbqR8QK0u21c4xD+oyNgnMXLnUiunGCVkeaRO6CO4P1oVNDqMzYknYRyAAomF5fcBQLT9f0iCNlvX7WVGPIwJb5AVLf8aAJ2el2Ryf97cbAfAUEVODGm1NSrxDmuz2+g8PSyiQCdk7OLJ7xY/jjrWbWKMkHe6k5qe6nuL6f2jULh55PDJ7q+gHgKsadaXOp3iWlhA01xJ9lF/H0HrTKLtGJJvu9VpWdc+FGOH7nLexsASxzFzdA3l8fxxR2X6N9cjte157V5MZ7FZDn3A4xSeimOZlIKSo2GVshlYVpgcYIg62KNumt8OXaXeny2pYvLHudvA1RkBFqwI5MMRlcdaocMX2L23uC2O17kyg7Z/exRnVAsN60LgBJBzLzDofSo+qr8y9p3DdSmjGdopCvN3N9s12pxGaybDFSCp8vAV6sYjBI8ZcEKc4J3CmpJSLiG6X7B5iAfM4GPypUccQ57mTapbG11WQhdmPOB558PnWqcPy8tpp+lRTKo5SAUGWbqScdBufOkLiiILKlwUDCCX6xcdVzVzSL7mmE0WYZFieBSPcCdvcKr+puoBMQXT7bmx9o8xW9reiS3WcFJmLyxrP3JGU4wNyQSRk4PhQvUZrVrowaZbQKJUbtVVubsyhKZBGwJz7zVIyTxOHhkjRI+8OSNX5OcHfJ+NfbGK3juZ5XcxszjtHYkcuTnOPv94pZ7QEIHcY9Jh7u4aHBbXXDbBZW/pCa3Ozv9XlhnlO3ht8qH8EQ6zw1p19b61ZCKz7aMREyqwJY8rbDO2MU22fEFtFpqc7k8qBQ4HXFBeLL63fSRPp7hZYZVdd/t+e1MV3IEwmOYod7nDxQ404etrK+a701GWKaLtAi55QckEDB293Tel97uJoEjVHDj7fKPtH5002urz3ac9xGqRRDDIqbYJ/U1ILayNhLIbO1F5ID2DpEMhT1Y7YyN62lnJD+J70WA9sVFZ1ysUZZBsCS4z8iK+0bOhW0bFYrlbiLYxyOQCQRn8c11H9UQI07HubLrBZ7SaNIywA28ATjpSu141lH2c0UyJLBk9iCxVyehNM+n6na6tp63VlIJEZdxnDK2OhHgaSeLLvU7W2hdFnhhXLOAeYq2+AD45oGppDPv8AM1TZhdviHDe3M0JhsFFu/KCPaBkjI8BVyJnjBmkJaKNC0jY6bdfdSpw1f6g0Uy3/AGmUHN2k2QUXyJNL3EfG81zBfaVpRk5JU7JpBy8oH7RBG5OMiiVKRwZi0iZur/WAgdTkUSUu3h868Q2RQhpOvl5VPKSq4Ub0d/dESYa4e4V1XXudrGFTEmzSyNyoD5Z8T7q0XgPhe44Vlvb3V3tPrECI0bEkDOT1A2/Sj1pGun8KWsWjqrAWy9mwA7xIBLe85JogFivdOiivQAzqAyc2CW8cVoLtyF7x9oZKhgMepBDMLyY3EN0zRDbseUDB/GlfiLgWz1fUptSt71obqVBlMAqxHQkdfSmxI7XTocIOUD5saACznlv2uIZ25Mkojevhny61k71UAjJ8w+1HJ5wPEzj6/TdSgtZhyz29z2UyE7MCMjfxHjWg38Jv7JHyRNbnJwBkqaQOLLpLvieWa35WS1aKGR0OVL5JP4/jT3pN6q6y1pJu01okieo6N/8AH50jqE3HHzN6ez02wJ8hEJiQOAzFcZO+cUH1ZliS2iVislzOGBx4fzimC/sxbuzR5HaZGPKlrW1S41eyte8RHzM2NsDH8KnFCrYMrVtu5EEa5CslxIOTuSDvCh9jAsF1ExZmTBHe6DzotfkyTMVOx2GR4VRS49neIuwCsxT0ycYz8jTtIyNvzM28Dd8RkhjUxssKrIhBIRRgsc7fgRVS5jt2ilu7TvTIgVstvlfD7hvXzS5yvZoIyJAvKCjDOPduT7/WiJCr9lFLO2wyTkk+IxsPGp7hq3xGkIZciBrnULqEQymy7RN897Az7sfjXma+jmBhkhlDNhuUqcqx8Nvhv60duIxOgil5RuDjpkZPh54FUop5XLSOAIyQq7d6MEePpXgVPIWDNIPOZSTTrx2ijWSKHD8z5fK5GOo91GltLePSSPboluNy5UEKVzsB69KGXLi4hZOeJXTdVYcxcj08amcGSZZWQtlQvIxPKFOOg6bedMV3EDBEw9C9qeoYs5Vazg7SwtudU5TznHQnp6Y3+NdQ6LS/qkCzzRgDHLHIyjA6bDxxiupsagfP/IoacmAbHUp9Lm7fTrhoX6HG4b3jxphX6SLkQ8k+lW8soH2+1KgnzxymlCUID1I9KhMSbkGmEbHRkIMRJ9a1m71eaWW+MeJOscQ5VwOgP72PWpNG4Z1bVY+fTtOcxH/eHCIficZpu+j/AIQtr+NdV1FO0gDEQxEDlfGxJ9M5GK08AKuFAAAwAPCmkr3DJmwC3cxg/R1r5lCMlqqkZ5+2yB6dM59wIpV1TT7jT76WyvI+znhOHXOfUb+IxX6LcZzSxxfw3Z63YyP2aRXkaExXAGGBx0PmPfWzUAOJ3Z8TL9F4v1jRbf2WF0mtsYWKYEhf7p6iti0a6h1fh+0uRysJYgXwOjftD55rIuHOG5dWt1u7wtBAwygBHM/6CnTh6BtFSa306dhGTzsJCGBb8vh5UodUikq0aq0trDMZrXThb9rGzmSNj3Vbcge+sj4n1W9biLUNOsNTuV09H5FSN9sgDmHN1658aNcbcV61HAIbWWKGJ9pJYVPOPcSdh7t/Wkqw7KPcMrE9SaIHTZ7OoPUb1bDdwxbWcceg3UUS/ZKyfEGiHEOoHStV4c1TmIXsykhH7uRn7j91dpAWa3uYtu9ERVT6QYv/ANa0mX/05CmfeP4Ut3YAYKtiOZqMrC9sxLEcnG/pSTelUubu4cZOBEh/H8RU/wBHGvi90yLT7hm7WMdmGPjj7P3bfCotbhb+kXUIRyE4GPEfxpbVJkbvzLukaCiyhuXyBGao6hai4smhIH1g8R0Ph+FWuXvEErzHIC1NKvagAY7g322oaN7RiMuM9wTwvrEi3HsV1N2MrHlQscJzeWf2elOE0N0kUjlVl7rnMeAzNkA9Ns/pWXa4DDqLOBhZN/j40a0ninULawW0juGESnKnxX0B649Pwp22lLVDEcySurfTuUPiONtNNIWGCThTzkjJznbGNvdihxaa1RAglRQSD2hXDEbb/Ppt1qD/AGos7jPt2mo7MRzNFKU2BzsPDf1qxNxXG9s4W0klYkgIWVVC+GTucjHp191LLpVHRjP/AKSGSW9tPF/VyFFLc4hUc64yM7mr8EMzSt7Q8acgMo7xGBnG+Scjf3dKVn4gv3SJY7S3hMScoLTM+dsZOwyfjQu6N3eqFvrt5IgeYRDZAfd4+mcmiDTJnLwVn9SAGFmgDirSIByvde0sdy8UQKjwwCfdn419rPESML9j766mhcAMCTTeScwtfARzvERuGI++p9Ns/a7u2td1M8yx8wG4ycZr3rKf/kJJEPMGbmGVxXyyvRp9/aXh7whmVyvmAayveIFhhsTdLWGK2gSGBAkaDlVR4CvZqhpes6fqkSyWFzHKCMlQe8vvHUVdO/Tf3VSGMcQ08NvQLiW87CyMatyvL3RvijFxNHEO+6g+Wd/lWb8eQ6nqN5ELO3uI4U37Q7cxBz8tqFa3GBC1AbsmEpLZkiSC2PZqiAYUH7PTrQ5YprQ9os4DdMEbY91eLjWZLKzVr1+x535MtjHN1IzS/dau123LD2k2P3O9k/CohrYHmWVdcYE88WXcbWc3aAczKUUDbc+NIscjRPlWOPfTsvDN7rTJLcdxQdhnpUer8Btb2xltLkvIv7DjY/Gm6ba0G0mT9VVZY24DgT7whe9tcrGWJDAjGT5UW40g7fgonGTDKrfiKV+D37LU4lYgMHAI328KeNZiE3C1/GfAZ++vW+2wGThxM+4PvmstTgdcjJxt5+H3/jWtavGtxELpIyHA7+KxGAGFiuSCp2IrWeHNUOoWcayDAdBnJ6sOv35rVqgtg9GUdHZxj4gGW3KvzuDztkACrtpBGsJDkkmruo2gtmMrsSOox5UGW4Lz7DHm1TgpD4lUsGXIgHiKw5uflB7pLDNL1qxU4rSLmzF3ETy5bGwNZ/qNutndSxg7KdvjvVCtsjaZH19fIcS7Y2817cx29sOaSQ4ApvfgswwYa/CT4BPMvd91CPo1ubVLm9uLmRVlRF5FPlnfH3VpDTPHbxnkJZ1Vmbm8T4D8q46lTA00KVy3mZRd89jdNbXIAkX12YeYNcJkOMMKduL9JttW09ndClzED2bsBzZAzg+YNZjAGx3nrwUEcQN1PpmHe0HmK6hsad37VdQ/TgY+cXAJew8v7Ue/zpauGPKRnaurqOO5u7/IZJw8zjX7DkkkQtcIhZHKnBYAjI36Vvssai3ZRzAZ/eNdXU5X1Op1OhgijUFEAJG58TUV5GkkTB1BGK+11EHU2e4h67awSaRrEMkYaM28smD+8BkH3givotobHRYltI1iVYQQF8+XOa+11SdeTsX+ZT0o95g7h+aSTWtRR3JRIoyozsDvVzXGIiwDgV1dSZHvEa8zIkdk18FGIxcnp/erUbs50bUlO47JtvjXV1UdR4kFuzMsuNpzjHypx4Gmk7Fl5jgSDHpXyurmp/b9xGNF/l/Mc9WAezcsMkHApSX7S11dS1/YlerqGrIAopPlWYcSk/0xfDwEpArq6mdP+6I679ohbhW3ii0z2yNeW4IYdoCcjcj4U/2d5cNbxFpSSIlwcDyNdXVm4neZ2oDYJ15NJI8qu2QI2wMe8VluposN8yRDlUDYV9rqJX3Aan9s6FiY9zXV1dRIjP/Z" width="300px" alt="south food">
+                    <p>The cuisine of South India is known for its light, low calorie appetizing dishes. The traditional
+                        food of South India is mainly rice based. The cuisine is famous for its wonderful mixing of rice
+                        and lentils to prepare yummy lip smacking dosas, idlis and uttapams.</p>
+                </div>
+            </div>
+
+        </main>
+
+        <aside class="right-sidebar-panel">
+            <h2 class="sidebar-main-title">Popular Foods</h2>
+            
+            <div class="sidebar-category">
+                <h3>North Indian</h3>
+                <ul class="sidebar-list">
+                    <li>Chole Bhature</li>
+                    <li>Samosa</li>
+                    <li>Jalebi</li>
+                    <li>Dahi Bhalla</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-category">
+                <h3>South Indian</h3>
+                <ul class="sidebar-list">
+                    <li>Idli</li>
+                    <li>Masala Dosa</li>
+                    <li>Pongal</li>
+                    <li>Bisi Bele Bath</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-category">
+                <h3>Mughlai</h3>
+                <ul class="sidebar-list">
+                    <li>Chicken Biryani</li>
+                    <li>Butter Chicken</li>
+                    <li>Rogan Josh</li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+      
+    <footer class="footer-bar">
+        <div>Published by: Ayushman</div>
+        <div>Date: 25/07/2026</div>
+    </footer>
+
+</body>
+</html>
